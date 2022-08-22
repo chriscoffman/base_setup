@@ -5,19 +5,19 @@ Steps:
 1. Setup virtual env for your project
 2. Install django using command $python -m pip install django~=4.0.0
 3. Install environs $python -m pip install 'environs[django]==9.3.5'
-4. Make migrations for admin and user accounts $python manage.py makemigrations accounts
-                                               $python manage.py migrate
-5. Make superuser for admin on website $python manage.py createsuperuser 
-6. Install crispyforms $python -m pip install django-crispy-forms==1.13.0
+4. Make superuser for admin on website $python manage.py createsuperuser 
+5. Install crispyforms $python -m pip install django-crispy-forms==1.13.0
                        $python -m pip install crispy-bootstrap5==0.6
-7. Create .env file for storing environment variables 
-8. Add DEBUG = True to .env
-9. Add SECRET_KEY = generated_password_here to .env using a generated secret key from $python -c "import secrets"; print(secrets.token_urlsafe())"
-10. Add DATABASE_URL = sqlite:///db.sqlite3   to .env
-11. Install Psycopg $python -m pip install psycopg2==2.9.3
-12. Install whitenoise $python -m pip install whitenoise==5.3.0
-13. Run collect static $python manage.py collectstatic 
-14. Install gunicorn $python -m pip install gunicorn==20.1.0
+6. Create .env file for storing environment variables 
+7. Add DEBUG = True to .env
+8. Add SECRET_KEY = generated_password_here to .env using a generated secret key from $python -c "import secrets; print(secrets.token_urlsafe())"
+9. Add DATABASE_URL = sqlite:///db.sqlite3   to .env
+10. Install Psycopg $python -m pip install psycopg2==2.9.3
+11. Install whitenoise $python -m pip install whitenoise==5.3.0
+12. Run collect static $python manage.py collectstatic 
+13. Install gunicorn $python -m pip install gunicorn==20.1.0
+14. 4. Make migrations for admin and user accounts $python manage.py makemigrations accounts
+                                                   $python manage.py migrate
 
 Now you should have the basis of website that can run on your local environment! 
 For further steps, I would recommend setting up an email service that can help users reset passwords with sendgrid.
