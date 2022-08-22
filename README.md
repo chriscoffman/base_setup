@@ -16,7 +16,7 @@ Steps:
 10. Install whitenoise $python -m pip install whitenoise==5.3.0
 11. Run collect static $python manage.py collectstatic 
 12. Install gunicorn $python -m pip install gunicorn==20.1.0
-13. 4. Make migrations for admin and user accounts $python manage.py makemigrations accounts
+13. Make migrations for admin and user accounts $python manage.py makemigrations accounts
                                                    $python manage.py migrate
 14. Create superuser $python manage.py createsuperuser
 
